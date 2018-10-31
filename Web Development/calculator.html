@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Calculator</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+            <div class="container d-flex justify-content-between">
+            <a href="index.html" class="navbar-brand d-flex align-items-center">
+                <span class="glyphicon glyphicon-phone" ></span><strong>Project</strong>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            </div>
+        </div>
+        <div id="clc">
+            <form action="">
+                <input type="text" name="dis" id="dis" autocomplete="off"><br>
+                <input id="shift" class="btn" type="button" name="" value="shift" onclick="fshift()">
+                <input id="log" class="btn shift" type="button" name="" value="log" onclick="flog()">
+                <input id="tan" class="btn shift" type="button" name="" value="tan" onclick="ftan()">
+                <input id="cos" class="btn shift" type="button" name="" value="cos" onclick="fcos()">
+                <input id="sin" class="btn shift" type="button" name="" value="sin" onclick="fsin()"><br>
+                <input id="sqrt" class="btn" type="button" name="" value="sqrt" onclick="fsqrt()">
+                <input id="sq" class="btn" type="button" name="" value="x^2" onclick="fsq()">
+                <input id="mod" class="btn" type="button" name="" value="mod" onclick="fmod()">
+                <input id="brl" class="btn" type="button" name="" value="(" onclick="var y = this.value;fb(y)">
+                <input id="brr" class="btn" type="button" name="" value=")" onclick="var y = this.value;fb(y)"><br>
+                <input id="seven" class="btn btn-primary" type="button" name="" value="7" onclick="var y = this.value;fb(y)">
+                <input id="eight" class="btn btn-primary" type="button" name="" value="8" onclick="var y = this.value;fb(y)">
+                <input id="nine" class="btn btn-primary" type="button" name="" value="9" onclick="var y = this.value;fb(y)">
+                <input id="del" class="btn btn-danger" type="button" name="" value="DEL" onclick="fdel()">
+                <input id="ac" class="btn btn-danger" type="button" name="" value="AC" onclick="fac()"><br>
+                <input id="four" class="btn btn-primary" type="button" name="" value="4" onclick="var y = this.value;fb(y)">
+                <input id="five" class="btn btn-primary" type="button" name="" value="5" onclick="var y = this.value;fb(y)">
+                <input id="six" class="btn btn-primary" type="button" name="" value="6" onclick="var y = this.value;fb(y)">
+                <input id="divide" class="btn btn-dark" type="button" name="" value="*" onclick="var y = this.value;fb(y)">
+                <input id="multiply" class="btn btn-dark" type="button" name="" value="/" onclick="var y = this.value;fb(y)"><br>
+                <input id="one" class="btn btn-primary" type="button" name="" value="1" onclick="var y = this.value;fb(y)">
+                <input id="two" class="btn btn-primary" type="button" name="" value="2" onclick="var y = this.value;fb(y)">
+                <input id="three" class="btn btn-primary" type="button" name="" value="3" onclick="var y = this.value;fb(y)">
+                <input id="add" class="btn btn-dark" type="button" name="" value="+" onclick="var y = this.value;fb(y)">
+                <input id="subtract" class="btn btn-dark" type="button" name="" value="-" onclick="var y = this.value;fb(y)"><br>
+                <input id="zero" class="btn btn-primary" type="button" name="" value="0" onclick="var y = this.value;fb(y)">
+                <input id="point" class="btn" type="button" name="" value="." onclick="var y = this.value;fb(y)">
+                <input id="exp" class="btn" type="button" name="" value="EXP" onclick="">
+                <input id="ans" class="btn" type="button" name="" value="ANS" onclick="">
+                <input id="equal" class="btn btn-success" type="button" name="" value="=" onclick="fequal()"><br>
+            </form>
+        </div>
+    </body>
+</html>
