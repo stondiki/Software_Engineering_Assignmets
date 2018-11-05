@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator - Project</title>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <div class="collapse bg-dark" id="navbarHeader">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8 col-md-7 py-4">
+              <h4 class="text-white">About</h4>
+              <p class="text-muted">My name is Terence Amunga. I am a student. I am interested in IOT, Machine Learning and Blockchain.</p>
+            </div>
+            <div class="col-sm-4 offset-md-1 py-4">
+              <h4 class="text-white">Photo</h4>
+              <img src="images/chicken.png" alt="chicken">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container d-flex justify-content-between">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <span class="glyphicon glyphicon-phone" ></span><strong>Project</strong>
+          </a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <main role="main" class="container">
+        <form>
+          <input type="text" name="value1" id="value1" placeholder="Enter value 1">
+          <span id="operation"></span>
+          <input type="text" name="value2" id="value2" placeholder="Enter value 2">
+          <span>=</span>
+          <span id="answer"></span>
+          <div class="buttons">
+            <input class="btn btn-primary" type="button" value="+" onclick="op('add')">
+            <input class="btn btn-primary" type="button" value="-" onclick="op('sub')">
+            <input class="btn btn-primary" type="button" value="*" onclick="op('mul')">
+            <input class="btn btn-primary" type="button" value="/" onclick="op('div')">
+          </div>
+        </form>
+      </main>
+  </body>
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.js"></script>
+  <script src="js/script.js"></script>
+</html>
+
+

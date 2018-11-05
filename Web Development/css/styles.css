@@ -1,0 +1,18 @@
+#navbarHeader img{
+  height: 120px;
+}
+.jumbotron {
+  margin-top: 20px;
+}
+
+main form {
+  margin: 20px 0;
+}
+
+main .buttons {
+ margin-top: 10px;
+}
+
+main span {
+  padding: 10px;
+}
